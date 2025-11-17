@@ -4,8 +4,8 @@ all: clean patch build bundle
 
 patch:
 	[ -f "$(ROOT)/droidcam-obs-plugin/linux/linux.mk.bak" ] || sed -i.bak \
-		-e 's/LIBUSBMUXD     ?= libusbmuxd$/LIBUSBMUXD     ?= libusbmuxd-2.0/' \
-		-e 's/LIBIMOBILEDEV  ?= libimobiledevice$/LIBIMOBILEDEV  ?= libimobiledevice-1.0/' \
+		-e 's/LIBUSBMUXD     ?= libusbmuxd$$/LIBUSBMUXD     ?= libusbmuxd-2.0/' \
+		-e 's/LIBIMOBILEDEV  ?= libimobiledevice$$/LIBIMOBILEDEV  ?= libimobiledevice-1.0/' \
 		$(ROOT)/droidcam-obs-plugin/linux/linux.mk
 
 build:
