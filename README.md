@@ -1,5 +1,7 @@
 # Usage
 
+Please follow each command before you run the next.
+
 ```
 git submodule update --init --recursive
 make
